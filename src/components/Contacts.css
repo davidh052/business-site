@@ -1,0 +1,36 @@
+.contact-map-section {
+    display: flex;
+    gap: 70px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* for responsiveness */
+    align-items: flex-start;
+}
+  
+.contact-info {
+    flex: 1 1 300px;
+    min-width: 280px;
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+}
+  
+.contact-info h2 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+  
+.map-container {
+    flex: 2 1 400px;       /* You can keep this or tweak */
+    min-width: 300px;
+    max-width: 500px;      /* Add max-width to limit horizontal stretch */
+    height: 300px;         /* Increase height to match width */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  

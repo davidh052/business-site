@@ -1,0 +1,62 @@
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    background-color: #1e3a8a;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+.book {
+    background-color: #3b82f6; /* Tailwind sky-500 */
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.1s ease;
+  }
+  
+  
+.book:hover {
+  background-color: #2563eb; /* deeper shade on hover */
+    transform: translateY(-2px); /* subtle lift */
+}
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between logo & title */
+}
+
+.logo {
+  height: 40px;
+  margin: 0; /* remove huge gap */
+}
+
+
+.topnav h2 {
+    padding-right: 10px;
+}
+
+.topnav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 1.2rem;
+  }
+  
+.topnav a:hover {
+    color: #ccc;
+}
+  

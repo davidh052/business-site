@@ -1,6 +1,39 @@
 .App {
-  text-align: center;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+
+
+  font-family: 'Lato', sans-serif;
+  
 }
+
+
+.header1 {
+  color: #1e3a8a;
+  background-color: #dbeafe;
+  padding: 20px;
+  margin: 0 auto 0 auto; /* top auto bottom auto */
+  text-align: center;
+  font-size: 3rem;
+  max-width: 850px;
+}
+
+.hero-sec {
+  background-image: url('./components/bg1.jpeg');
+  background-size: cover;       /* makes the image fill the container */
+  background-position: center;  /* centers the image */
+  height: 300px;                /* adjust as needed */
+  margin-top: 40px;
+  display: flex;
+  align-items: center;          /* vertical centering */
+  justify-content: center;      /* horizontal centering */
+  text-align: center;
+  color: white;                 /* text color over image */
+  padding: 20px;
+
+}
+
+
 
 .App-logo {
   height: 40vmin;
