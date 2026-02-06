@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors from existing site */
+  --color-brand-900: #1e3a8a;
+  --color-brand-600: #2563eb;
+  --color-brand-500: #3b82f6;
+  --color-brand-100: #dbeafe;
+  --color-brand-50: #f0f7ff;
+
+  /* Neutrals */
+  --color-surface: #f9fafb;
+  --color-text-primary: #1e3a8a;
+  --color-text-body: #333333;
+
+  /* Font */
+  --font-sans: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
