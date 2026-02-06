@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 
 function ContactForm() {
@@ -7,7 +9,7 @@ function ContactForm() {
     phone: '',
     message: '',
   })
-  const [status, setStatus] = useState(null) // 'sending' | 'success' | 'error'
+  const [status, setStatus] = useState(null)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -42,7 +44,7 @@ function ContactForm() {
             Get in Touch
           </h2>
           <p className="text-text-body mb-8">
-            Have a question or want to schedule a visit? Send us a message and we'll get back to you within 24 hours.
+            Have a question or want to schedule a visit? Send us a message and we&apos;ll get back to you within 24 hours.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -115,7 +117,7 @@ function ContactForm() {
 
             {status === 'success' && (
               <p className="text-green-600 font-medium text-center">
-                Message sent! We'll be in touch soon.
+                Message sent! We&apos;ll be in touch soon.
               </p>
             )}
             {status === 'error' && (

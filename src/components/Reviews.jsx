@@ -35,7 +35,7 @@ function Reviews() {
               key={review.author}
               className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-brand-500"
             >
-              <p className="text-text-body italic leading-relaxed mb-4">"{review.text}"</p>
+              <p className="text-text-body italic leading-relaxed mb-4">&ldquo;{review.text}&rdquo;</p>
               <cite className="text-brand-900 font-semibold not-italic">— {review.author}</cite>
             </blockquote>
           ))}
@@ -47,7 +47,7 @@ function Reviews() {
               key={review.author}
               className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-brand-500"
             >
-              <p className="text-text-body italic leading-relaxed mb-4">"{review.text}"</p>
+              <p className="text-text-body italic leading-relaxed mb-4">&ldquo;{review.text}&rdquo;</p>
               <cite className="text-brand-900 font-semibold not-italic">— {review.author}</cite>
             </blockquote>
           ))}

@@ -1,11 +1,17 @@
-import bgImage from '../assets/bg1.jpeg'
+import Image from 'next/image'
+import bgImage from '@/assets/bg1.jpeg'
 
 function Hero() {
   return (
-    <section
-      className="relative flex items-center justify-center min-h-[70vh] bg-cover bg-center"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
+    <section className="relative flex items-center justify-center min-h-[70vh]">
+      <Image
+        src={bgImage}
+        alt="Professional phlebotomy services"
+        fill
+        className="object-cover"
+        priority
+      />
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-brand-900/60" />
 

@@ -6,9 +6,9 @@ node_modules/
 .env.local
 .env.*.local
 
-# Build output
-client/dist/
-/build
+# Next.js build output
+.next/
+out/
 
 # Testing
 /coverage

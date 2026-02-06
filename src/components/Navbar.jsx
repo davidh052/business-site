@@ -1,4 +1,5 @@
-import logo from '../assets/logo.jpg'
+import Image from 'next/image'
+import logo from '@/assets/logo.jpg'
 
 function Navbar() {
   return (
@@ -6,7 +7,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo + Name */}
         <div className="flex items-center gap-3">
-          <img src={logo} alt="M.E.D Lab Services" className="h-10 w-10 rounded-full object-cover" />
+          <Image src={logo} alt="M.E.D Lab Services" width={40} height={40} className="rounded-full object-cover" />
           <span className="text-white text-lg font-bold tracking-wide">M.E.D Lab Services</span>
         </div>
 
