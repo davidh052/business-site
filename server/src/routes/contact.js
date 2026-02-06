@@ -1,9 +1,18 @@
 const express = require('express');
+const rateLimit = require('express-rate-limit');
 const router = express.Router();
 const { sendContactEmail, sendAutoReply } = require('../services/email');
 const { validateContactForm } = require('../middleware/validation');
 
-router.post('/', validateContactForm, async (req, res) => {
+const contactLimiter = rateLimit({
+  windowMs: 30 * 60 * 1000, // 30 minutes
+  max: 3,                    // 3 requests per IP per window
+  message: { message: 'Too many requests. Please try again later.' },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+router.post('/', contactLimiter, validateContactForm, async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
 
