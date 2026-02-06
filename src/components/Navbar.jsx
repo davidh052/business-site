@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from '@/assets/logo.jpg'
 
 function Navbar() {
@@ -6,17 +7,19 @@ function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo + Name */}
-        <div className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <Image src={logo} alt="M.E.D Lab Services" width={40} height={40} className="rounded-full object-cover" />
           <span className="text-white text-lg font-bold tracking-wide">M.E.D Lab Services</span>
-        </div>
+        </Link>
 
         {/* Nav Links */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="#about" className="text-white/80 hover:text-white text-sm font-medium transition-colors">About</a>
-          <a href="#services" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Services</a>
-          <a href="#reviews" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Reviews</a>
-          <a href="#contact" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Contact</a>
+          <a href="/#about" className="text-white/80 hover:text-white text-sm font-medium transition-colors">About</a>
+          <a href="/#services" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Services</a>
+          <a href="/#reviews" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Reviews</a>
+          <a href="/#contact" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Contact</a>
+          <Link href="/faq" className="text-white/80 hover:text-white text-sm font-medium transition-colors">FAQ</Link>
+
         </div>
 
         {/* CTA Button */}
