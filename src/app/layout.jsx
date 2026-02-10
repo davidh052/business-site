@@ -1,6 +1,7 @@
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import CallButton from '@/components/CallButton'
 
 export const metadata = {
   title: 'M.E.D Lab Services',
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <CallButton />
       </body>
     </html>
   )
