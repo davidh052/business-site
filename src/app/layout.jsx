@@ -1,4 +1,5 @@
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CallButton from '@/components/CallButton'
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <CallButton />
+        <SpeedInsights />
       </body>
     </html>
   )
