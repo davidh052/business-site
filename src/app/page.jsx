@@ -5,7 +5,6 @@ import HowItWorks from '@/components/HowItWorks'
 import Reviews from '@/components/Reviews'
 import BookCTA from '@/components/BookCTA'
 import ContactForm from '@/components/ContactForm'
-
 export default function Home() {
   return (
     <>
